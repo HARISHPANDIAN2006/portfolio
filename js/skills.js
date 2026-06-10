@@ -1,12 +1,14 @@
 const skillsContainer = document.getElementById('skills-container');
 
 skills.forEach((skill, index) => {
+  const logoClass = skill.darkLogo
+    ? 'skill-logo bg-white rounded-xl p-2'
+    : 'skill-logo';
+
   skillsContainer.innerHTML += `
-    <div class="scale-in group rounded-2xl card-gradient border border-border hover:border-primary/50 p-5 flex items-center gap-4" style="transition-delay: ${index * 0.08}s;">
-      <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl group-hover:bg-primary/20 transition-colors">
-        ${skill.icon}
-      </div>
-      <span class="font-medium text-foreground group-hover:text-primary transition-colors">${skill.name}</span>
+    <div class="skill-logo-item scale-in group flex flex-col items-center text-center" style="transition-delay: ${index * 0.06}s;">
+      <img src="${skill.logo}" alt="${skill.name} logo" class="${logoClass}" loading="lazy">
+      <span class="mt-4 text-base md:text-lg font-semibold text-slate-800 group-hover:text-primary transition-colors">${skill.name}</span>
     </div>
   `;
 });

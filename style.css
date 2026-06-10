@@ -5,8 +5,8 @@
     }
 
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3, h4, h5, h6 { font-family: 'Syne', sans-serif; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
     
     .text-gradient {
       background: var(--gradient-primary);
@@ -66,15 +66,23 @@
     
     .cert-card { perspective: 1000px; transition: all 0.5s ease; }
     .cert-card:hover { transform: translateY(-10px) rotateY(5deg); }
+
+    .skill-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-logo-item:hover .skill-logo {
+      transform: translateY(-4px) scale(1.08);
+    }
     
     .bounce-arrow { animation: bounce 2s infinite; }
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(10px); }
     }
-    
-    .tech-icon:hover { transform: scale(1.2) translateY(-5px); }
-    .tech-icon { transition: all 0.3s ease; }
     
     .social-icon:hover { transform: scale(1.1) translateY(-2px); }
     .social-icon { transition: all 0.3s ease; }

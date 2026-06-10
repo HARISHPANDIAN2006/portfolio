@@ -12,7 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
   <!-- Tailwind Config -->
@@ -35,8 +35,8 @@
             border: 'hsl(220 15% 18%)',
           },
           fontFamily: {
-            display: ['Syne', 'sans-serif'],
-            body: ['Inter', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
           },
         }
       }
@@ -59,6 +59,7 @@
       <div class="hidden md:flex items-center gap-8">
         <a href="#about" class="nav-link text-muted-foreground hover:text-foreground">About</a>
         <a href="#experience" class="nav-link text-muted-foreground hover:text-foreground">Experience</a>
+        <a href="#education" class="nav-link text-muted-foreground hover:text-foreground">Education</a>
         <a href="#skills" class="nav-link text-muted-foreground hover:text-foreground">Skills</a>
         <a href="#projects" class="nav-link text-muted-foreground hover:text-foreground">Projects</a>
         <a href="#certificates" class="nav-link text-muted-foreground hover:text-foreground">Certificates</a>
@@ -123,9 +124,11 @@
         <!-- Image/Visual -->
         <div class="relative scale-in">
           <div class="relative aspect-square rounded-3xl overflow-hidden card-gradient border border-border glow">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-7xl md:text-8xl font-display font-bold text-primary">HI</div>
-            </div>
+            <img
+              src="Photo/IMG-20260401-WA0016.png"
+              alt="Harishpandian I"
+              class="w-full h-full object-cover"
+              loading="lazy">
             <div class="absolute -top-4 -right-4 w-24 h-24 rounded-full border-2 border-primary/20"></div>
             <div class="absolute -bottom-6 -left-6 w-32 h-32 rounded-full border-2 border-primary/10"></div>
           </div>
@@ -162,59 +165,85 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Internship Experience Section -->
   <section id="experience" class="py-32 px-6 bg-secondary/30">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-primary font-medium tracking-wider uppercase text-sm">Experience</span>
+        <span class="text-primary font-medium tracking-wider uppercase text-sm">Internship Experience</span>
         <h2 class="text-4xl md:text-5xl font-bold tracking-tight mt-4">
-          Work & <span class="text-gradient">Education</span>
+          Practical Industry <span class="text-gradient">Exposure</span>
         </h2>
+        <p class="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          Hands-on development experience across AI-assisted workflows, full-stack applications, and responsive web interfaces.
+        </p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-8">
-        <div class="fade-in rounded-2xl card-gradient border border-border p-6">
-          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">Internship</p>
+        <div class="fade-in rounded-2xl card-gradient border border-border p-7">
+          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-3">AI Tools Internship</p>
           <h3 class="text-2xl font-display font-bold mb-2">Adroit Soft India Pvt. Ltd</h3>
           <p class="text-muted-foreground leading-relaxed">
             Built MCP tool integrations for a hospital management chatbot using RAG architecture, enabling dynamic data retrieval and healthcare workflow automation.
           </p>
         </div>
 
-        <div class="fade-in rounded-2xl card-gradient border border-border p-6" style="transition-delay: 0.1s;">
-          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">Web Development Intern</p>
+        <div class="fade-in rounded-2xl card-gradient border border-border p-7" style="transition-delay: 0.1s;">
+          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-3">Web Development Intern</p>
           <h3 class="text-2xl font-display font-bold mb-2">Codsoft</h3>
           <p class="text-muted-foreground leading-relaxed">
             Developed full-stack applications with user authentication, data management, responsive interfaces, and practical web development workflows.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="fade-in rounded-2xl card-gradient border border-border p-6" style="transition-delay: 0.2s;">
-          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">B.E. Computer Science and Engineering</p>
+  <!-- Education Section -->
+  <section id="education" class="py-32 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-primary font-medium tracking-wider uppercase text-sm">Education</span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight mt-4">
+          Academic <span class="text-gradient">Foundation</span>
+        </h2>
+        <p class="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          A computer science path focused on software engineering, databases, web systems, and problem solving.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="fade-in rounded-2xl card-gradient border border-border p-7">
+          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-3">Bachelor of Engineering</p>
           <h3 class="text-2xl font-display font-bold mb-2">National Engineering College</h3>
-          <p class="text-muted-foreground">2023 - 2027 | Kovilpatti, Tamil Nadu | CGPA: 7.91</p>
+          <p class="text-muted-foreground mb-4">Computer Science and Engineering | 2023 - 2027</p>
+          <div class="flex flex-wrap gap-3 text-sm">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">CGPA: 7.91</span>
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">Kovilpatti, Tamil Nadu</span>
+          </div>
         </div>
 
-        <div class="fade-in rounded-2xl card-gradient border border-border p-6" style="transition-delay: 0.3s;">
-          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">Senior Secondary</p>
+        <div class="fade-in rounded-2xl card-gradient border border-border p-7" style="transition-delay: 0.1s;">
+          <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-3">Senior Secondary</p>
           <h3 class="text-2xl font-display font-bold mb-2">Kshatriya Vidhyasala Higher Secondary School</h3>
-          <p class="text-muted-foreground">Tamil Nadu State Board | Percentage: 88.67%</p>
+          <p class="text-muted-foreground mb-4">Science | Tamil Nadu State Board</p>
+          <div class="flex flex-wrap gap-3 text-sm">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">Percentage: 88.67%</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-32 px-6 bg-secondary/30">
+  <section id="skills" class="py-28 px-6 bg-stone-100 text-slate-900">
     <div class="max-w-6xl mx-auto">
-      <div class="fade-in text-center mb-16">
-        <span class="text-primary font-medium tracking-wider uppercase text-sm">My Skills</span>
-        <h2 class="text-4xl md:text-5xl font-bold tracking-tight mt-4">
-          Technologies I <span class="text-gradient">Work With</span>
+      <div class="fade-in text-center mb-14">
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-primary">
+          My Skills
         </h2>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="skills-container">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-10 gap-y-12 md:gap-y-16" id="skills-container">
         <!-- Skills will be populated by JS -->
       </div>
     </div>
