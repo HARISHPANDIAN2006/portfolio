@@ -5,8 +5,17 @@
     }
 
     html { scroll-behavior: smooth; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+    body { font-family: 'Oswald', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Instrument Serif', serif; }
+
+    .nav-link,
+    button,
+    .hero-button,
+    .outline-button,
+    .text-sm,
+    .skill-logo-item span {
+      font-family: 'Roboto Mono', 'Iosevka Charon', monospace;
+    }
     
     .text-gradient {
       background: var(--gradient-primary);
@@ -29,6 +38,7 @@
     }
     
     .outline-button {
+      background: hsl(220 15% 8% / 0.92);
       transition: all 0.3s ease;
     }
     .outline-button:hover {

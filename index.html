@@ -12,7 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Iosevka+Charon&family=Oswald:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
   <!-- Tailwind Config -->
@@ -23,6 +23,7 @@
         extend: {
           colors: {
             background: 'hsl(220 20% 4%)',
+            background2: 'hsl(220 25% 10%)',
             foreground: 'hsl(60 10% 95%)',
             card: 'hsl(220 15% 8%)',
             'card-foreground': 'hsl(60 10% 95%)',
@@ -35,8 +36,9 @@
             border: 'hsl(220 15% 18%)',
           },
           fontFamily: {
-            display: ['Playfair Display', 'serif'],
-            body: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Instrument Serif', 'serif'],
+            body: ['Oswald', 'sans-serif'],
+            mono: ['Roboto Mono', 'Iosevka Charon', 'monospace'],
           },
         }
       }
@@ -52,11 +54,11 @@
 <body class="bg-background text-foreground antialiased min-h-screen">
 
   <!-- Navbar -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4 opacity-0 -translate-y-full" style="transition: all 0.6s ease;">
-    <div class="max-w-6xl mx-auto flex items-center justify-between">
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-5 bg-background2 border-b border-border shadow-lg shadow-black/20 opacity-0 -translate-y-full" style="transition: all 0.6s ease;">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
       <a href="#" class="text-2xl font-display font-bold text-gradient">Harishpandian</a>
       
-      <div class="hidden md:flex items-center gap-8">
+      <div class="hidden md:flex items-center gap-6">
         <a href="#about" class="nav-link text-muted-foreground hover:text-foreground">About</a>
         <a href="#experience" class="nav-link text-muted-foreground hover:text-foreground">Experience</a>
         <a href="#education" class="nav-link text-muted-foreground hover:text-foreground">Education</a>
@@ -73,7 +75,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-28">
     <!-- Background gradient -->
     <div class="absolute inset-0 bg-gradient-to-b from-background via-background to-secondary/20"></div>
     
@@ -106,7 +108,7 @@
         </a>
       </div>
 
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 fade-in" style="transition-delay: 1.2s;">
+      <div class="fade-in mt-14 flex justify-center" style="transition-delay: 1.2s;">
         <a href="#about" class="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
           <span class="text-sm">Scroll Down</span>
           <svg class="w-5 h-5 bounce-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
